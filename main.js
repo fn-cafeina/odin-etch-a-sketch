@@ -48,3 +48,17 @@ board.addEventListener("mouseover", (e) => {
     if(opacity === 0) opacity = 9;
   }
 });
+
+for(let i = 0; i < 10; i++) {
+  const row = document.createElement("div");
+  row.classList.add("row");
+
+  for(let j = 0; j < 10; j++) {
+    const col = document.createElement("div");
+    col.classList.add("col");
+
+    row.appendChild(col);
+  }
+
+  board.appendChild(row);
+}
